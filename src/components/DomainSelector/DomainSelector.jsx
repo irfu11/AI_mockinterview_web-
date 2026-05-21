@@ -220,37 +220,6 @@ export default function DomainSelector({ onStartInterview }) {
           </button>
         </div>
       </div>
-
-      {/* Brand Logos Row from Reference UI */}
-      <div className="logos-bar animate-fade-in">
-        <p className="logos-title">INTERVIEWS DESIGNED TO MEET INDUSTRY STANDARDS AT</p>
-        <div className="logos-grid">
-          <div className="logo-item">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.859-3.578-7.859-8s3.53-8 7.859-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 5.92 1 1 5.92 1 12.24s4.92 11.24 11.24 11.24c6.6 0 11-4.64 11-11.24 0-.756-.08-1.333-.18-1.955H12.24z"/></svg>
-            <span>Google</span>
-          </div>
-          <div className="logo-item">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.82M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.2.67-2.92 1.49-.62.71-1.16 1.85-1.01 2.96 1.12.09 2.27-.58 2.94-1.39z"/></svg>
-            <span>Apple</span>
-          </div>
-          <div className="logo-item font-adobe">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M13.93 2.4L22.62 21.6H18.75L15.36 14.1H8.64L5.25 21.6H1.38L10.07 2.4H13.93Z"/></svg>
-            <span>Adobe</span>
-          </div>
-          <div className="logo-item">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.12 20.45H3.56V9H7.12v11.45zM5.34 7.43c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zm15.11 13.02h-3.56v-5.6c0-1.34-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.7H9.33V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29z"/></svg>
-            <span>LinkedIn</span>
-          </div>
-          <div className="logo-item">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M0 0h11.4v11.4H0zm12.6 0H24v11.4H12.6zM0 12.6h11.4V24H0zm12.6 0H24V24H12.6z"/></svg>
-            <span>Microsoft</span>
-          </div>
-          <div className="logo-item">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0h12v12H12zM0 12h12v12H0zM0 0h12v12H0z"/></svg>
-            <span>Framer</span>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
