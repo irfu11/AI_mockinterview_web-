@@ -1,0 +1,341 @@
+/* src/components/AvatarCard/AvatarCard.css */
+
+.avatar-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  justify-content: space-between;
+  min-height: 400px;
+  background: #ffffff;
+  border: 1px solid rgba(107, 168, 143, 0.2);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 10px 40px rgba(45, 95, 82, 0.1);
+}
+
+/* Background Glow layer */
+.bg-glow-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(93, 184, 155, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 0;
+  transition: background 0.5s ease;
+  pointer-events: none;
+}
+
+.avatar-card-container.speaking .bg-glow-layer {
+  background: radial-gradient(circle, rgba(93, 184, 155, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.avatar-card-container.listening .bg-glow-layer {
+  background: radial-gradient(circle, rgba(93, 184, 155, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.avatar-card-container.thinking .bg-glow-layer {
+  background: radial-gradient(circle, rgba(107, 168, 143, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+/* Corner Status Badge */
+.status-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--border-radius-full);
+  background: rgba(93, 184, 155, 0.1);
+  border: 1px solid rgba(93, 184, 155, 0.2);
+  font-size: 0.75rem;
+  font-weight: 700;
+  z-index: 10;
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+}
+
+.status-badge.speaking {
+  color: var(--text-primary);
+  border-color: rgba(93, 184, 155, 0.4);
+  background: rgba(93, 184, 155, 0.2);
+}
+
+.status-badge.listening {
+  color: #5db89b;
+  border-color: rgba(93, 184, 155, 0.4);
+  background: rgba(93, 184, 155, 0.15);
+}
+
+.status-badge.thinking {
+  color: var(--text-secondary);
+  border-color: rgba(107, 168, 143, 0.3);
+  background: rgba(107, 168, 143, 0.1);
+}
+
+.status-icon-glow {
+  color: var(--text-primary);
+  filter: drop-shadow(0 0 4px rgba(93, 184, 155, 0.5));
+}
+
+.status-icon-glow-success {
+  color: #5db89b;
+  filter: drop-shadow(0 0 4px rgba(93, 184, 155, 0.6));
+}
+
+.status-icon-glow-thinking {
+  color: var(--text-secondary);
+}
+
+.spinning {
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Avatar Image & Ring styling */
+.avatar-wrapper {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.avatar-ring-glow {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: var(--border-radius-full);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+}
+
+/* State-based glowing rings */
+.speaking .avatar-ring-glow {
+  border-color: var(--text-primary);
+  animation: pulseGlow 2.5s infinite;
+}
+
+.listening .avatar-ring-glow {
+  border-color: var(--color-success);
+  animation: pulseGlowListening 1.8s infinite;
+}
+
+.thinking .avatar-ring-glow {
+  border-color: var(--text-secondary);
+  animation: pulseGlowThinking 2s infinite;
+}
+
+@keyframes pulseGlowThinking {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+.avatar-image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-full);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: #111115;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: avatarBreathing 6s ease-in-out infinite;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fallback Geometric Cyber Face */
+.avatar-placeholder-face {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.female-gradient {
+  background: radial-gradient(circle at center, #27272a 0%, #09090b 100%);
+}
+
+.male-gradient {
+  background: radial-gradient(circle at center, #18181b 0%, #09090b 100%);
+}
+
+.cyber-eye {
+  position: absolute;
+  top: 45%;
+  width: 18px;
+  height: 4px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  opacity: 0.8;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.female-gradient .cyber-eye, .male-gradient .cyber-eye {
+  color: var(--text-primary);
+}
+
+.cyber-mouth {
+  position: absolute;
+  bottom: 30%;
+  width: 32px;
+  height: 2px;
+  background: var(--text-secondary);
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.speaking .cyber-mouth {
+  height: 10px;
+  border-radius: 5px;
+  opacity: 0.9;
+  background: var(--text-primary);
+  box-shadow: 0 0 10px var(--text-primary);
+  animation: talkGlow 0.3s ease infinite alternate;
+}
+
+@keyframes talkGlow {
+  0% { height: 2px; }
+  100% { height: 12px; }
+}
+
+.cyber-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 15px 15px;
+  pointer-events: none;
+}
+
+/* Audio Visualizer overlays */
+.visualizer-container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  margin-top: 15px;
+}
+
+.equalizer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 30px;
+  gap: 3px;
+}
+
+.bar {
+  width: 3px;
+  height: 2px;
+  border-radius: var(--border-radius-full);
+  transition: height 0.1s ease;
+}
+
+.speaking-eq .bar {
+  background-color: var(--text-primary);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  animation: eqBounce 1.2s ease-in-out infinite;
+}
+
+.listening-eq .bar {
+  background-color: var(--color-success);
+  box-shadow: 0 0 5px rgba(34, 197, 94, 0.4);
+  animation: eqBounce 0.8s ease-in-out infinite;
+}
+
+/* Vary animation timings to look organic */
+.bar:nth-child(1) { animation-delay: 0.1s; }
+.bar:nth-child(2) { animation-delay: 0.35s; }
+.bar:nth-child(3) { animation-delay: 0.15s; }
+.bar:nth-child(4) { animation-delay: 0.55s; }
+.bar:nth-child(5) { animation-delay: 0.25s; }
+.bar:nth-child(6) { animation-delay: 0.45s; }
+.bar:nth-child(7) { animation-delay: 0.05s; }
+.bar:nth-child(8) { animation-delay: 0.65s; }
+.bar:nth-child(9) { animation-delay: 0.3s; }
+.bar:nth-child(10) { animation-delay: 0.2s; }
+
+@keyframes eqBounce {
+  0%, 100% { height: 4px; }
+  50% { height: 26px; }
+}
+
+/* Thinking Indicator Dots */
+.thinking-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--border-radius-full);
+  background-color: var(--text-primary);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  animation: dotBounce 1.4s infinite ease-in-out;
+}
+
+.dot:nth-child(1) { animation-delay: -0.32s; }
+.dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes dotBounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40% { transform: scale(1.1); opacity: 1; }
+}
+
+.idle-indicator {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Avatar Footer Info */
+.avatar-info-footer {
+  text-align: center;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.avatar-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.avatar-role {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}

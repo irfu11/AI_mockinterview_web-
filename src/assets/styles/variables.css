@@ -1,0 +1,56 @@
+/* src/assets/styles/variables.css */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Font Families */
+  --font-heading: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Theme Colors (Nature/Plant Theme - Green & Teal) */
+  --bg-primary: #f5f3f0;           /* Light cream/beige */
+  --bg-secondary: #e8e5e0;         /* Soft beige */
+  --bg-card: #4a9b7f;              /* Teal green primary */
+  --bg-card-hover: #5db89b;        /* Lighter teal */
+  --bg-input: #f5f3f0;             /* Light input background */
+  
+  /* Accent Colors */
+  --color-primary: #2d5f52;        /* Deep forest green */
+  --color-primary-rgb: 45, 95, 82;
+  --color-secondary: #6ba88f;      /* Medium green */
+  --color-secondary-rgb: 107, 168, 143;
+  --color-success: #5db89b;        /* Teal success */
+  --color-success-rgb: 93, 184, 155;
+  --color-warning: #c9843c;        /* Warm brown */
+  --color-danger: #b85c4a;         /* Terracotta red-brown */
+
+  /* Text Colors */
+  --text-primary: #2d5f52;         /* Deep green text */
+  --text-secondary: #6ba88f;       /* Medium green text */
+  --text-muted: #a8b8b0;           /* Muted green-grey */
+  
+  /* Borders */
+  --border-color: rgba(45, 95, 82, 0.15);
+  --border-color-hover: rgba(45, 95, 82, 0.3);
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+
+  /* Glassmorphism Blur */
+  --blur-amount: 20px;
+
+  /* Shadows and Glows */
+  --shadow-sm: 0 2px 8px rgba(45, 95, 82, 0.1);
+  --shadow-md: 0 8px 32px rgba(45, 95, 82, 0.15);
+  --shadow-lg: 0 16px 48px rgba(45, 95, 82, 0.2);
+  
+  /* Accent Glows */
+  --glow-primary: 0 0 20px rgba(45, 95, 82, 0.08);
+  --glow-secondary: 0 0 20px rgba(107, 168, 143, 0.08);
+  --glow-success: 0 0 20px rgba(93, 184, 155, 0.2);
+  --glow-pulse: cubic-bezier(0.4, 0, 0.6, 1);
+
+  /* Layout Constants */
+  --max-width: 1200px;
+  --header-height: 70px;
+}
