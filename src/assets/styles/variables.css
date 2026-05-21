@@ -6,31 +6,31 @@
   --font-heading: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Theme Colors (Nature/Plant Theme - Green & Teal) */
-  --bg-primary: #f5f3f0;           /* Light cream/beige */
-  --bg-secondary: #e8e5e0;         /* Soft beige */
-  --bg-card: #4a9b7f;              /* Teal green primary */
-  --bg-card-hover: #5db89b;        /* Lighter teal */
-  --bg-input: #f5f3f0;             /* Light input background */
+  /* Theme Colors (Luxury Dark Theme) */
+  --bg-primary: #0a0a0a;           /* Deep black */
+  --bg-secondary: #1a1a1a;         /* Dark charcoal */
+  --bg-card: #151515;              /* Card dark background */
+  --bg-card-hover: #1f1f1f;        /* Hover dark */
+  --bg-input: #0f0f0f;             /* Input background */
   
-  /* Accent Colors */
-  --color-primary: #2d5f52;        /* Deep forest green */
-  --color-primary-rgb: 45, 95, 82;
-  --color-secondary: #6ba88f;      /* Medium green */
-  --color-secondary-rgb: 107, 168, 143;
-  --color-success: #5db89b;        /* Teal success */
-  --color-success-rgb: 93, 184, 155;
-  --color-warning: #c9843c;        /* Warm brown */
-  --color-danger: #b85c4a;         /* Terracotta red-brown */
+  /* Accent Colors - Gold & Bronze */
+  --color-primary: #d4af37;        /* Luxury gold */
+  --color-primary-rgb: 212, 175, 55;
+  --color-secondary: #8b7355;      /* Bronze/taupe */
+  --color-secondary-rgb: 139, 115, 85;
+  --color-success: #c9a961;        /* Muted gold */
+  --color-success-rgb: 201, 169, 97;
+  --color-warning: #9b8b5c;        /* Muted bronze */
+  --color-danger: #8b5a3c;         /* Dark bronze */
 
   /* Text Colors */
-  --text-primary: #2d5f52;         /* Deep green text */
-  --text-secondary: #6ba88f;       /* Medium green text */
-  --text-muted: #a8b8b0;           /* Muted green-grey */
+  --text-primary: #e8dcc8;         /* Elegant cream */
+  --text-secondary: #b8a887;       /* Muted beige */
+  --text-muted: #787060;           /* Dim brown-grey */
   
   /* Borders */
-  --border-color: rgba(45, 95, 82, 0.15);
-  --border-color-hover: rgba(45, 95, 82, 0.3);
+  --border-color: rgba(212, 175, 55, 0.15);
+  --border-color-hover: rgba(212, 175, 55, 0.3);
   --border-radius-sm: 8px;
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
@@ -40,14 +40,14 @@
   --blur-amount: 20px;
 
   /* Shadows and Glows */
-  --shadow-sm: 0 2px 8px rgba(45, 95, 82, 0.1);
-  --shadow-md: 0 8px 32px rgba(45, 95, 82, 0.15);
-  --shadow-lg: 0 16px 48px rgba(45, 95, 82, 0.2);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.8);
   
   /* Accent Glows */
-  --glow-primary: 0 0 20px rgba(45, 95, 82, 0.08);
-  --glow-secondary: 0 0 20px rgba(107, 168, 143, 0.08);
-  --glow-success: 0 0 20px rgba(93, 184, 155, 0.2);
+  --glow-primary: 0 0 20px rgba(212, 175, 55, 0.1);
+  --glow-secondary: 0 0 20px rgba(139, 115, 85, 0.1);
+  --glow-success: 0 0 20px rgba(201, 169, 97, 0.15);
   --glow-pulse: cubic-bezier(0.4, 0, 0.6, 1);
 
   /* Layout Constants */

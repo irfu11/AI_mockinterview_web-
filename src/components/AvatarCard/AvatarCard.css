@@ -10,10 +10,10 @@
   height: 100%;
   justify-content: space-between;
   min-height: 400px;
-  background: #ffffff;
-  border: 1px solid rgba(107, 168, 143, 0.2);
+  background: #151515;
+  border: 1px solid rgba(212, 175, 55, 0.15);
   border-radius: var(--border-radius-lg);
-  box-shadow: 0 10px 40px rgba(45, 95, 82, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
 
 /* Background Glow layer */
@@ -24,22 +24,22 @@
   transform: translate(-50%, -50%);
   width: 250px;
   height: 250px;
-  background: radial-gradient(circle, rgba(93, 184, 155, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
   z-index: 0;
   transition: background 0.5s ease;
   pointer-events: none;
 }
 
 .avatar-card-container.speaking .bg-glow-layer {
-  background: radial-gradient(circle, rgba(93, 184, 155, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
 .avatar-card-container.listening .bg-glow-layer {
-  background: radial-gradient(circle, rgba(93, 184, 155, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
 .avatar-card-container.thinking .bg-glow-layer {
-  background: radial-gradient(circle, rgba(107, 168, 143, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle, rgba(139, 115, 85, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
 /* Corner Status Badge */
@@ -52,8 +52,8 @@
   gap: 6px;
   padding: 6px 14px;
   border-radius: var(--border-radius-full);
-  background: rgba(93, 184, 155, 0.1);
-  border: 1px solid rgba(93, 184, 155, 0.2);
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.25);
   font-size: 0.75rem;
   font-weight: 700;
   z-index: 10;
@@ -62,35 +62,35 @@
 }
 
 .status-badge.speaking {
-  color: var(--text-primary);
-  border-color: rgba(93, 184, 155, 0.4);
-  background: rgba(93, 184, 155, 0.2);
+  color: #d4af37;
+  border-color: rgba(212, 175, 55, 0.4);
+  background: rgba(212, 175, 55, 0.15);
 }
 
 .status-badge.listening {
-  color: #5db89b;
-  border-color: rgba(93, 184, 155, 0.4);
-  background: rgba(93, 184, 155, 0.15);
+  color: #c9a961;
+  border-color: rgba(201, 169, 97, 0.4);
+  background: rgba(201, 169, 97, 0.12);
 }
 
 .status-badge.thinking {
-  color: var(--text-secondary);
-  border-color: rgba(107, 168, 143, 0.3);
-  background: rgba(107, 168, 143, 0.1);
+  color: #8b7355;
+  border-color: rgba(139, 115, 85, 0.3);
+  background: rgba(139, 115, 85, 0.08);
 }
 
 .status-icon-glow {
-  color: var(--text-primary);
-  filter: drop-shadow(0 0 4px rgba(93, 184, 155, 0.5));
+  color: #d4af37;
+  filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.5));
 }
 
 .status-icon-glow-success {
-  color: #5db89b;
-  filter: drop-shadow(0 0 4px rgba(93, 184, 155, 0.6));
+  color: #c9a961;
+  filter: drop-shadow(0 0 4px rgba(201, 169, 97, 0.6));
 }
 
 .status-icon-glow-thinking {
-  color: var(--text-secondary);
+  color: #8b7355;
 }
 
 .spinning {

@@ -14,14 +14,15 @@
   align-items: center;
   padding: 0 40px;
   border-radius: 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
   border-top: none;
   border-left: none;
   border-right: none;
   z-index: 100;
   position: sticky;
   top: 0;
-  background: rgba(74, 155, 127, 0.85);
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
 }
 
 @media (max-width: 600px) {
@@ -40,8 +41,8 @@
 .brand-logo-icon {
   width: 24px;
   height: 24px;
-  color: #ffffff;
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+  color: #d4af37;
+  filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.4));
 }
 
 .brand-text {
@@ -49,12 +50,12 @@
   font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: #d4af37;
 }
 
 .brand-text span {
-  color: #ffffff;
-  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+  color: #d4af37;
+  background: linear-gradient(135deg, #d4af37 0%, rgba(212, 175, 55, 0.7) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -63,11 +64,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(93, 184, 155, 0.15);
-  border: 1px solid rgba(93, 184, 155, 0.3);
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   padding: 6px 12px;
   border-radius: var(--border-radius-sm);
-  color: #ffffff;
+  color: #d4af37;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -192,8 +193,8 @@
 
 /* Console Log Box */
 .console-log-box {
-  background: rgba(74, 155, 127, 0.15);
-  border: 1px solid var(--border-color);
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.15);
   border-radius: var(--border-radius-sm);
   padding: 16px;
   text-align: left;
@@ -214,8 +215,8 @@
 
 .console-line.active {
   opacity: 1;
-  color: var(--color-primary);
-  text-shadow: 0 0 4px rgba(93, 184, 155, 0.4);
+  color: var(--text-primary);
+  text-shadow: 0 0 4px rgba(212, 175, 55, 0.4);
 }
 
 .prompt-sym {

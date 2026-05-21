@@ -15,10 +15,10 @@
   align-items: center;
   padding: 40px;
   gap: 40px;
-  background: #ffffff;
-  border: 1px solid rgba(107, 168, 143, 0.2);
+  background: #151515;
+  border: 1px solid rgba(212, 175, 55, 0.15);
   border-radius: var(--border-radius-lg);
-  box-shadow: 0 10px 40px rgba(45, 95, 82, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 900px) {
@@ -48,7 +48,8 @@
 .radial-circle-fill {
   stroke-linecap: round;
   transition: stroke-dashoffset 1s cubic-bezier(0.16, 1, 0.3, 1);
-  filter: drop-shadow(0 0 6px rgba(93, 184, 155, 0.4));
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.4));
+  stroke: #d4af37;
 }
 
 .score-display {
@@ -111,10 +112,10 @@
 }
 
 /* Score colors mapping */
-.rating-badge.excellent { background: rgba(93, 184, 155, 0.15); color: #5db89b; border-color: rgba(93, 184, 155, 0.3); }
-.rating-badge.good { background: rgba(107, 168, 143, 0.1); color: #4a9b7f; border-color: rgba(107, 168, 143, 0.2); }
-.rating-badge.avg { background: rgba(201, 132, 60, 0.15); color: #c9843c; border-color: rgba(201, 132, 60, 0.3); }
-.rating-badge.bad { background: rgba(184, 92, 74, 0.15); color: #b85c4a; border-color: rgba(184, 92, 74, 0.3); }
+.rating-badge.excellent { background: rgba(201, 169, 97, 0.15); color: #c9a961; border-color: rgba(201, 169, 97, 0.3); }
+.rating-badge.good { background: rgba(212, 175, 55, 0.1); color: #d4af37; border-color: rgba(212, 175, 55, 0.2); }
+.rating-badge.avg { background: rgba(155, 139, 92, 0.15); color: #9b8b5c; border-color: rgba(155, 139, 92, 0.3); }
+.rating-badge.bad { background: rgba(139, 90, 60, 0.15); color: #8b5a3c; border-color: rgba(139, 90, 60, 0.3); }
 
 .summary-desc {
   color: var(--text-secondary);
@@ -185,28 +186,28 @@
 
 /* Muted secondary pill button */
 .download-btn {
-  background: rgba(93, 184, 155, 0.1);
-  border: 1px solid rgba(93, 184, 155, 0.2);
-  color: var(--text-primary);
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  color: #d4af37;
 }
 
 .download-btn:hover {
-  background: rgba(93, 184, 155, 0.2);
-  border-color: rgba(93, 184, 155, 0.3);
+  background: rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.3);
 }
 
-/* Primary white pill button */
+/* Primary gold pill button */
 .restart-btn-dash {
-  background: linear-gradient(135deg, #c9843c 0%, #b85c4a 100%);
+  background: #d4af37;
   border: none;
-  color: #ffffff;
-  box-shadow: 0 4px 15px rgba(201, 132, 60, 0.2);
+  color: #0a0a0a;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
 }
 
 .restart-btn-dash:hover {
-  background: linear-gradient(135deg, #d4934a 0%, #c46952 100%);
+  background: #e8c547;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(201, 132, 60, 0.35);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
 }
 
 /* Detailed breakdown */
@@ -231,16 +232,16 @@
 }
 
 .breakdown-card {
-  background: #ffffff;
-  border: 1px solid rgba(107, 168, 143, 0.15);
+  background: #151515;
+  border: 1px solid rgba(212, 175, 55, 0.1);
   border-radius: var(--border-radius-lg);
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(45, 95, 82, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .breakdown-card.expanded {
-  border-color: rgba(107, 168, 143, 0.3);
+  border-color: rgba(212, 175, 55, 0.2);
 }
 
 .breakdown-card-header {
@@ -324,18 +325,18 @@
   border: 1px solid transparent;
 }
 
-.score-label.good { background: rgba(93, 184, 155, 0.15); color: #5db89b; border-color: rgba(93, 184, 155, 0.3); }
-.score-label.avg { background: rgba(201, 132, 60, 0.15); color: #c9843c; border-color: rgba(201, 132, 60, 0.3); }
-.score-label.bad { background: rgba(184, 92, 74, 0.15); color: #b85c4a; border-color: rgba(184, 92, 74, 0.3); }
+.score-label.good { background: rgba(201, 169, 97, 0.15); color: #c9a961; border-color: rgba(201, 169, 97, 0.3); }
+.score-label.avg { background: rgba(155, 139, 92, 0.15); color: #9b8b5c; border-color: rgba(155, 139, 92, 0.3); }
+.score-label.bad { background: rgba(139, 90, 60, 0.15); color: #8b5a3c; border-color: rgba(139, 90, 60, 0.3); }
 
 /* Expanded Body Content */
 .breakdown-card-body {
   padding: 0 24px 28px;
-  border-top: 1px solid rgba(107, 168, 143, 0.15);
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: rgba(93, 184, 155, 0.02);
+  background: rgba(212, 175, 55, 0.02);
   animation: slideInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 

@@ -10,16 +10,16 @@
 body {
   font-family: var(--font-body);
   background-color: var(--bg-primary);
-  /* Subtle nature pattern background */
+  /* Elegant luxury background pattern */
   background-image: 
-    linear-gradient(rgba(107, 168, 143, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(107, 168, 143, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(rgba(212, 175, 55, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
   background-position: center top;
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
-  line-height: 1.5;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -36,10 +36,10 @@ button, input, select, textarea {
   color: inherit;
 }
 
-/* Custom Scrollbar for nature feel */
+/* Custom Scrollbar for luxury feel */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -47,12 +47,12 @@ button, input, select, textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(107, 168, 143, 0.4);
+  background: rgba(212, 175, 55, 0.3);
   border-radius: var(--border-radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(45, 95, 82, 0.6);
+  background: rgba(212, 175, 55, 0.5);
 }
 
 /* Glassmorphism card utility */
@@ -82,8 +82,8 @@ button, input, select, textarea {
   position: absolute;
   width: 50px;
   height: 50px;
-  opacity: 0.5;
-  filter: drop-shadow(0 0 8px rgba(107, 168, 143, 0.4));
+  opacity: 0.3;
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
   pointer-events: none;
   animation: floatBlink 6s ease-in-out infinite alternate;
 }
@@ -109,33 +109,33 @@ button, input, select, textarea {
 
 /* Glowing text helper */
 .text-glow-primary {
-  text-shadow: 0 0 10px rgba(45, 95, 82, 0.3);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
 .text-glow-secondary {
-  text-shadow: 0 0 10px rgba(107, 168, 143, 0.3);
+  text-shadow: 0 0 10px rgba(139, 115, 85, 0.3);
 }
 
 /* Keyframe Animations */
 @keyframes pulseGlow {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(107, 168, 143, 0.1);
-    border-color: rgba(107, 168, 143, 0.15);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.15);
   }
   50% {
-    box-shadow: 0 0 25px rgba(107, 168, 143, 0.25);
-    border-color: rgba(107, 168, 143, 0.35);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+    border-color: rgba(212, 175, 55, 0.35);
   }
 }
 
 @keyframes pulseGlowListening {
   0%, 100% {
-    box-shadow: 0 0 15px rgba(93, 184, 155, 0.15);
-    border-color: rgba(93, 184, 155, 0.2);
+    box-shadow: 0 0 15px rgba(201, 169, 97, 0.15);
+    border-color: rgba(201, 169, 97, 0.2);
   }
   50% {
-    box-shadow: 0 0 35px rgba(93, 184, 155, 0.4);
-    border-color: rgba(93, 184, 155, 0.5);
+    box-shadow: 0 0 35px rgba(201, 169, 97, 0.4);
+    border-color: rgba(201, 169, 97, 0.5);
   }
 }
 
